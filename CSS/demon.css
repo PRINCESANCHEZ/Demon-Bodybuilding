@@ -1,0 +1,74 @@
+h1{
+    font-family: 'Pacifico';
+    color: rgb(150, 150, 150);
+    text-shadow:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0; /* Add this line to remove the top margin */
+    margin-bottom: 0; /* You can also add this if you want to remove space below the h1 */
+    margin-right: 100;
+    margin-trim: 50;
+}
+
+.slideshow-container{
+    width: 1300px;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow{
+    display: none;
+    transition: 3s;
+}
+
+.slideshow:first-of-type {
+    display: block;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transition: 3s;
+  }
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+  /* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
