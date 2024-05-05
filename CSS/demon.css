@@ -1,9 +1,9 @@
 h1{
-    font-family: 'Pacifico';
+    font-family: 'Romanesco';
     color: rgb(150, 150, 150);
     text-shadow:rgb(255, 255, 255);
     text-align: center;
-    font-size: 50px;
+    font-size: 80px;
     margin-top: 0; /* Add this line to remove the top margin */
     margin-bottom: 0; /* You can also add this if you want to remove space below the h1 */
     margin-right: 100;

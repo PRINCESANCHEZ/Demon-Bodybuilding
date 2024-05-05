@@ -1,0 +1,28 @@
+.personal-details{
+    font-size: 50px;
+    font-family: Pacifico;
+    color: rgb(150, 150, 150);
+    text-align: center;
+}
+.slider-container{
+    width: auto;
+    color: antiquewhite;
+    align-content: center;
+    text-align: center;
+    font-size: 50px;
+    color: aliceblue;
+}
+
+#ageSlider{
+    margin-bottom: 20;
+}
+
+input[type="range"]::-webkit-slider-runnable-track{
+    width: 300px;
+    background: gray
+}
+
+#calculate-macros{
+    display: inline-block;
+    text-align: center;
+}

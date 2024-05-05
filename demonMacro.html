@@ -5,18 +5,47 @@
         <title>Macro Calculator</title>
         <link href="CSS/master.css" rel="stylesheet">
         <link href="CSS/demonMacro.css" rel="stylesheet">
-        <script src="JS/demonMacro.js"></script>
+        <script src="JS/demonMacro.js" defer></script>
+        <link href='https://fonts.googleapis.com/css?family=Roboto|Pacifico' rel='stylesheet'> 
     </head>
     <body>
         <img class="logo" src="/Users/princesanchez/Downloads/Demon Bodybuilding.png">
     </body>
     <div class="personal-details">
-        <h2>Please select your age</h2>
-        <h2>Please select your weight</h2>
-        <h2>Please select your height</h2>
+        <h2>Modify and enter your biometrics below</h2>
     </div>
     <div class="slider-container">
-        <input type="range" min="1" max="100" value="50" class="slider">
+        <label for="ageSlider">Age:</label>
+        <input type="range" id="ageSlider" name="age" min="12" max="100" value="0">
+        <span id="ageOutput">12</span><br>
+
+        <label for="heightFeetSlider">Height (Feet):</label>
+        <input type="range" id="heightFeetSlider" name="heightFeet" min="4" max="7" value="0">
+        <span id="heightFeetOutput">4</span><br>
+
+        <label for="heightInchesSlider">Height (Inches):</label>
+        <input type="range" id="heightInchesSlider" name="heightInches" min="0" max="11" value="0">
+        <span id="heightInchesOutput">0</span><br>
+
+        <label for="weightSlider">Weight (lbs):</label>
+        <input type="range" id="weightSlider" name="weight" min="80" max="400" value="0">
+        <span id="weightOutput">80</span><br>
+
+        <label for="sex-selector">Sex:</label>
+        <select id="sex-selector" name="sex">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <label for="activity-selector">Activity Level:</label>
+        <select id="activity-selector" name="activity">
+            <option value="sedentary">Sedentary (little or no exercise)</option>
+            <option value="light">Light (1-2 days of exercise per week)</option>
+            <option value="moderate">Moderate (3-4 days of exercise per week)</option>
+            <option value="active">Active (5-6 days of exericse per week)</option>
+            <option value="extreme">Extreme (Intense exercise daily)</option>
+        </select>
     </div>
+    <button id="calculate-macros">Calculate Macros</button>
 
 </html>
