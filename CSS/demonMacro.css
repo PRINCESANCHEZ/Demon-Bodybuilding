@@ -1,28 +1,98 @@
 .personal-details{
     font-size: 50px;
-    font-family: Pacifico;
-    color: rgb(150, 150, 150);
+    font-family: Sumana;
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 .slider-container{
     width: auto;
-    color: antiquewhite;
-    align-content: center;
+    color: rgb(150, 150, 150);
+    align-content: space-evenly;
     text-align: center;
     font-size: 50px;
-    color: aliceblue;
+    color: rgb(196, 196, 196);
 }
 
 #ageSlider{
-    margin-bottom: 20;
+    margin-bottom: 40px;
+}
+
+#heightFeetSlider{
+    margin-bottom: 40px;
+}
+
+#heightInchesSlider{
+    margin-bottom: 40px;
+}
+
+#weightSlider{
+    margin-bottom: 40px;
 }
 
 input[type="range"]::-webkit-slider-runnable-track{
-    width: 300px;
-    background: gray
+    width: 10cm !important;
+    background: rgb(214, 78, 128);
+    
+}
+
+#sex-selector{
+    margin-bottom: 40px;
+    background-color: rgb(214, 78, 128); 
+    color: black; 
+    border: none;
+    padding: 15px 32px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; 
+    border-radius: 8px; 
+}
+
+#activity-selector{
+    margin-bottom: 40px;
+    background-color: rgb(214, 78, 128);
+    color: black; 
+    border: none; 
+    padding: 15px 32px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 4px;
+    cursor: pointer; 
+    border-radius: 8px; 
+} 
+
+#goal-selector{
+    margin-bottom: 40px;
+    background-color: rgb(214, 78, 128); 
+    color: black; 
+    border: none; 
+    padding: 15px 32px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; 
+    border-radius: 8px;
 }
 
 #calculate-macros{
     display: inline-block;
     text-align: center;
+    background-color: rgb(214, 78, 128); 
+    color: black; 
+    border: none; 
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; 
+    border-radius: 8px;
 }
+

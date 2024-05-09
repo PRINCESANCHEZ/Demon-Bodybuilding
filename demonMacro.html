@@ -35,8 +35,7 @@
         <select id="sex-selector" name="sex">
             <option value="male">Male</option>
             <option value="female">Female</option>
-        </select>
-
+        </select><br>
         <label for="activity-selector">Activity Level:</label>
         <select id="activity-selector" name="activity">
             <option value="sedentary">Sedentary (little or no exercise)</option>
@@ -44,8 +43,17 @@
             <option value="moderate">Moderate (3-4 days of exercise per week)</option>
             <option value="active">Active (5-6 days of exericse per week)</option>
             <option value="extreme">Extreme (Intense exercise daily)</option>
-        </select>
+        </select><br>
+        <label for="goal-selector">Select your goal:</label>
+        <select id="goal-selector" name="goal">
+            <option value="lightCut">Cut Option 1: Lose 1lb per week</option>
+            <option value="heavyCut">Cut Option 2: Lose 2lb per week</option>
+            <option value="recomp">Body Recomposition: Maintain weight</option>
+            <option value="lightBulk">Bulk Option 1: Gain 1lb per week</option>
+            <option value="heavyBulk">Bulk Option 2: Gain 2lb per week</option>
+        </select><br>
+        <button id="calculate-macros" onclick="calculateTotalCalories()">Calculate Macros</button><br>
+        <p>Your daily calorie intake: <span id="calculate-result">0</span></p>
     </div>
-    <button id="calculate-macros">Calculate Macros</button>
 
 </html>
